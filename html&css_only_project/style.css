@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--white);
+    font-size: 112.5%;
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* variables */
+
+:root {
+    --white: #f9f9f9;
+    --black: #2d2e31;
+    --gray: #727375;
+    --light-gray: #b5b6b8;
+    --purple: #7445cf;
+}
+
+/* utility calsses*/
+
+.container {
+    width: 80%;
+    margin-inline: auto;
+}
+
+.spacing {
+    margin-top: 6em;
+}
+
+.btn {
+    padding: 0.8em 1.6em;
+    font: inherit;
+    font-size: clamp(0.8em, 3vw, 1em);
+    border: none;
+    border-radius: 5px;
+    background-color: var(--purple);
+    text-transform: uppercase;
+    color: var(--white);
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+    max-width: fit-content;
+    white-space: nowrap;
+}
+
+.btn:hover,
+.btn:focus {
+    transform: scale(1.05);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section-title {
+    font-size: clamp(1.5em, 3vw, 2em);
+    margin-block: 1.5em;
+}
+
+/* promo line */
+
+.promo-line {
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    padding-block: 3px;
+    font-size: 0.9em;
+}
+
+/* menu */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.1em;
+    background-color: var(--white);
+    color: var(--black);
+    z-index: 1;
+}
+
+.nav-links a {
+    color: var(--black);
+}
+
+/* LOGO */
+.logo {
+    font-size: 1.8em;
+    color: var(--black);
+}
+
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.menu li:hover,
+.menu li:focus-within {
+    background-color: var(--light-gray);
+    border-radius: 3px;
+    transition: 0.3s ease;
+}
+
+.menu li {
+    padding: 0.33em 0.8em;
+}
+
+/* DROPDOWN MENU */
+.services {
+    position: relative;
+}
+
+.dropdown {
+    background-color: var(--light-gray);
+    padding: 0.5em 0;
+    position: absolute;
+    display: none;
+    top: 32px;
+    font-weight: 400;
+    border-radius: 3px;
+}
+
+.dropdown li + li {
+    margin-top: 0.7em;
+}
+
+.dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+}
+
+.dropdown li:hover {
+    background-color: var(--gray);
+}
+
+.services:hover .dropdown {
+    display: block;
+}
+
+/* RESPONSIVE MENU*/
+
+input[type=checkbox] {
+    display: none;
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+    display: none;
+    font-size: 1.5em;
+    user-select: none;
+}
+
+/* MAIN */
+
+/* HERO */
+
+.hero-section {
+    height: 70dvh;
+    background: linear-gradient(rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.1)), url(./images/hero-image-2.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.hero-text {
+    text-align: end;
+    color: var(--purple);
+    margin-right: 5%;
+}
+
+.hero-title {
+    max-width: 15ch;
+    font-size: clamp(2em, 6vw, 4em);
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+}
+
+.discount-info {
+    position: relative;
+    background-color: var(--purple);
+    width: 65%;
+    padding: 0.8em 0.2em;
+    text-align: center;
+    color: var(--white);
+    font-size: clamp(1.5em, 3vw, 2em);
+    top: -45px;
+    box-shadow: 0 7px 15px -1px rgba(0, 0, 0, 0.5);
+}
+
+/* featured */
+
+.featured-layout {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5em;
+}
+
+.card {
+    width: 15%;
+    min-width: 250px;
+    margin: 1em;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 0.6em;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
+    transition: 200ms ease-in-out;
+    background: rgb(214, 214, 214);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.card:hover,
+.card:focus {
+    transform: scale(1.05);
+}
+
+.card-img {
+    width: 200px;
+    margin: 10px auto;
+}
+
+.card p {
+    color: #a6a6a7;
+    padding: 5px;
+}
+
+.price {
+    font-size: 1.5em;
+
+}
+
+.buy {
+    font-size: 1.2em;
+    color: var(--white);
+    background-color: var(--purple);
+    border: none;
+    margin-top: 0.5em;
+    padding: 0.5em;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    bottom: 0;
+}
+
+.push-down {
+    flex-grow: 0;
+}
+
+/* horizontal-split */
+
+.horizontal-split {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row;
+}
+
+.text-container {
+    padding: 5em;
+    gap: 1.5em;
+    height: 50dvh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    font-size: clamp(0.9em, 1.5vw, 1em);
+    overflow: hidden;
+    width: 50%;
+}
+
+.split-img {
+    width: 50%;
+    display: block;
+    object-position: center;
+    object-fit: cover;
+    height: 50dvh;
+    overflow: hidden;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+
+}
+
+.right-btn {
+    align-self: flex-end;
+}
+
+/* gallery */
+
+.gallery {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+}
+
+.gallery-item {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+    justify-self: center;
+}
+
+.gallery-item img {
+    max-width: 100%;
+}
+
+.contact {
+    margin-top: 4em;
+    height: 40dvh;
+    background-color: var(--black);
+}
+
+/* MEDIA QUERIES FOR MENU */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: var(--white);
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 1em 0;
+    }
+
+    .menu li:hover {
+        display: inline-block;
+        background-color: var(--light-gray);
+        transition: 0.3s ease;
+    }
+
+    .menu li + li {
+        margin-top: 14px;
+    }
+
+    input[type=checkbox]:checked ~ .menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .dropdown {
+        top: 32px;
+    }
+
+    .dropdown li:hover {
+        background-color: var(--gray);
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .discount-info {
+        width: 90%;
+    }
+
+    .horizontal-split {
+        flex-flow: column;
+    }
+
+    .text-container {
+        width: 100%;
+        order: 2;
+        padding: 3em;
+    }
+
+    .split-img {
+        width: 100%;
+    }
+
+
+}

@@ -12,9 +12,9 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Delicious</a>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary shadow py-3">
+        <div class="container-fluid mx-5">
+          <a class="navbar-brand fs-4" href="#">Delicious</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -28,39 +28,55 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <li class="nav-item mx-3">
+                <a class="nav-link fs-5 fw-medium" href="#home">Home</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About us</a>
+              <li class="nav-item mx-3">
+                <a class="nav-link fs-5 fw-medium" href="#about">About us</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Our products</a>
+              <li class="nav-item mx-3">
+                <a class="nav-link fs-5 fw-medium" href="#products"
+                  >Our products</a
+                >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+              <li class="nav-item mx-3">
+                <a class="nav-link fs-5 fw-medium" href="#contact">Contact</a>
               </li>
             </ul>
-            <a href="#" class="btn btn-primary">log in</a>
+            <a href="#" class="btn btn-danger btn-md px-5">log in</a>
           </div>
         </div>
       </nav>
     </header>
     <main>
-      <section class="hero">
-        <div class="container"></div>
-        <div class="">
-          <img src="" alt="..." />
+      <section>
+        <div
+          class="p-5 text-center bg-image"
+          style="
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.4),
+                rgba(0, 0, 0, 0.4)
+              ),
+              url('./images/ice-cream.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 65dvh;
+          "
+        >
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-white col-lg-6">
+              <h1 class="display-2 fw-semibold mb-3">Delicious</h1>
+              <h4 class="display-6 fw-semibold mb-3">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Nesciunt, rerum!
+              </h4>
+              <a class="btn btn-danger btn-lg px-5 shadow" href="#"
+                >Learn more</a
+              >
+            </div>
+          </div>
         </div>
       </section>
-
-      <section class="container about">
-        <div class="row"></div>
-      </section>
-      <section class="container featured"></section>
-      <section class="container gellery"></section>
-      <section class="container for-beginners"></section>
-      <section class="conteiner contact"></section>
     </main>
     <footer>
       <section class="container"></section>

@@ -149,7 +149,7 @@
 
       <br class="my-5" />
 
-      <section id="about" class="bg-info bg-opacity-25 py-4">
+      <article id="about" class="py-4 bg-light">
         <div class="container my-3">
           <div class="row my-3">
             <div class="col-lg-7">
@@ -180,21 +180,21 @@
             </div>
           </div>
         </div>
-      </section>
+      </article>
 
-      <section id="products">
+      <section id="products" class="pt-5">
         <div class="container mb-5">
           <div class="row">
-            <h2 class="display-4 fw-semibold text-center my-5">Our flavours</h2>
+            <h2 class="display-4 fw-semibold text-center my-4">Our flavours</h2>
 
             <ul
-              class="nav nav-pills justify-content-around d-flex flex-column flex-sm-row mb-3 mb-3 text-center"
+              class="nav nav-pills justify-content-around d-flex flex-column flex-sm-row text-center"
               id="pills-tab"
               role="tablist"
             >
               <li class="nav-item" role="presentation">
                 <button
-                  class="btn shadow btn-warning text-black fw-semibold fs-5 px-4 my-3 active"
+                  class="btn shadow btn-warning text-black fw-semibold fs-5 px-4 mb-3 active"
                   id="pills-strawberry-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#pills-strawberry"
@@ -208,7 +208,7 @@
               </li>
               <li class="nav-item" role="presentation">
                 <button
-                  class="btn shadow btn-warning text-black fw-semibold fs-5 px-4 my-3"
+                  class="btn shadow btn-warning text-black fw-semibold fs-5 px-4 mb-3"
                   id="pills-blueberry-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#pills-blueberry"
@@ -222,7 +222,7 @@
               </li>
               <li class="nav-item" role="presentation">
                 <button
-                  class="btn shadow btn-warning text-black fw-semibold fs-5 px-4 my-3"
+                  class="btn shadow btn-warning text-black fw-semibold fs-5 px-4 mb-3"
                   id="pills-cherry-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#pills-cherry"
@@ -245,7 +245,7 @@
               aria-labelledby="pills-strawberry-tab"
               tabindex="0"
             >
-              <div class="row bg-danger bg-opacity-10 rounded p-md-5">
+              <div class="row rounded p-md-5">
                 <div class="col-lg-7 d-flex align-items-center">
                   <div class="text-lg-end fs-5">
                     <h3 class="h1 mb-4 mx-lg-4">Strawberry</h3>
@@ -275,9 +275,7 @@
               aria-labelledby="pills-blueberry-tab"
               tabindex="0"
             >
-              <div
-                class="row bg-primary bg-opacity-10 rounded d-flex flex-wrap p-md-5"
-              >
+              <div class="row rounded d-flex flex-wrap p-md-5">
                 <div class="col-lg-7 d-flex align-items-center order-lg-2">
                   <div class="text-start fs-5">
                     <h3 class="h1 mb-4 mx-lg-4">Blueberry</h3>
@@ -308,7 +306,7 @@
               aria-labelledby="pills-cherry-tab"
               tabindex="0"
             >
-              <div class="row bg-danger bg-opacity-10 rounded p-md-5">
+              <div class="row rounded p-md-5">
                 <div class="col-lg-7 d-flex align-items-center">
                   <div class="text-lg-end fs-5">
                     <h3 class="h1 mb-4 mx-lg-4">Cherry</h3>
@@ -359,10 +357,23 @@
           </form>
         </div>
       </section>
+
+      <section>
+        <div class="container">
+          <div class="row"></div>
+        </div>
+      </section>
     </main>
 
     <footer>
-      <section class="container"></section>
+      <section>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-6"></div>
+            <div class="col-lg-6"></div>
+          </div>
+        </div>
+      </section>
     </footer>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   </body>
